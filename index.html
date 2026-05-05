@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raab Paddles — Pagaies de compétition</title>
-  <meta name="description" content="Raab conçoit des pagaies de kayak de compétition en fibre de carbone.">
+  <meta name="description" content="Raab conçoit des pagaies de kayak de compétition en fibre de carbone. Performance, légèreté, précision.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
     <a href="index.html" class="logo">R<span>AA</span>B</a>
-
     <ul class="nav-links">
       <li><a href="index.html" class="active">Accueil</a></li>
       <li><a href="catalogue.html">Catalogue</a></li>
       <li><a href="technologie.html">Technologie</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-
     <a href="contact.html" class="nav-cta">Trouver un revendeur</a>
-
-    <button class="burger" id="burger">
+    <button class="burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -32,62 +30,185 @@
     <a href="catalogue.html">Catalogue</a>
     <a href="technologie.html">Technologie</a>
     <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-red" style="align-self:flex-start;margin-top:8px">Trouver un revendeur</a>
   </div>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-accent"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Pagaies de compétition</span>
+      <h1>Chaque<br>coup<br>d'eau <em>compte.</em></h1>
+      <p>Raab conçoit des pagaies de compétition pour les kayakistes qui ne laissent rien au hasard. Carbone ultraléger, géométrie de lame optimisée, performance à l'état pur.</p>
+      <div class="hero-btns">
+        <a href="catalogue.html" class="btn btn-red">Voir les pagaies</a>
+        <a href="technologie.html" class="btn btn-outline">Notre technologie</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3<span>K</span></div>
+        <div class="stat-label">Athlètes équipés</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">−<span>18%</span></div>
+        <div class="stat-label">Traîne hydrodynamique</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">720<span>g</span></div>
+        <div class="stat-label">Poids minimal</div>
+      </div>
+    </div>
+  </section>
 
-      <div class="hero-content">
-        <span class="hero-tag">Pagaies de compétition</span>
-        <h1>Chaque<br>coup<br>d'eau <em>compte.</em></h1>
-        <p>Raab conçoit des pagaies de compétition pour les kayakistes exigeants.</p>
+  <!-- FEATURES OVERVIEW -->
+  <section class="section section--mid features-section">
+    <div class="section-label">Pourquoi Raab</div>
+    <h2 class="section-title">La pagaie<br>repensée.</h2>
+    <p class="section-sub">Chaque composant est étudié pour un seul objectif : vous faire aller plus vite.</p>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="red-line"></div>
+        <h3>Carbone 3K</h3>
+        <p>Structure tressée haute densité pour un ratio rigidité/poids inégalé. Le manche absorbe les vibrations sans sacrifier la puissance.</p>
+      </div>
+      <div class="feat-card">
+        <div class="red-line"></div>
+        <h3>Lame CFD</h3>
+        <p>Nos lames sont modélisées par simulation fluid-dynamique pour maximiser la prise d'eau et réduire l'effort en sortie de pale.</p>
+      </div>
+      <div class="feat-card">
+        <div class="red-line"></div>
+        <h3>Ovale ajustable</h3>
+        <p>L'orientation de l'ovale du manche est réglable sur 15° pour s'adapter à la morphologie et au style de chaque pagayeur.</p>
+      </div>
+      <div class="feat-card">
+        <div class="red-line"></div>
+        <h3>Anti-dérapage</h3>
+        <p>Revêtement texturé breveté sur les zones de prise. Maintien optimal même en conditions humides, sans alourdissement.</p>
+      </div>
+    </div>
+    <a href="technologie.html" class="btn btn-outline" style="margin-top:48px">Explorer la technologie →</a>
+  </section>
 
-        <div class="hero-btns">
-          <a href="catalogue.html" class="btn btn-red">Voir les pagaies</a>
-          <a href="technologie.html" class="btn btn-outline">Technologie</a>
+  <!-- PRODUITS EN AVANT -->
+  <section class="section section--dark">
+    <div class="section-label">Sélection 2025</div>
+    <h2 class="section-title">Nos meilleures<br>pagaies.</h2>
+    <p class="section-sub">Trois modèles, trois disciplines, une obsession : la performance.</p>
+    <div class="highlight-grid">
+
+      <a href="catalogue.html" class="highlight-card">
+        <span class="hc-badge">Sprint</span>
+        <div class="hc-visual">
+          <svg viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="25" rx="18" ry="14" fill="#CC1E1E" opacity=".9"/>
+            <ellipse cx="20" cy="25" rx="11" ry="8" fill="#A01515"/>
+            <rect x="36" y="22" width="148" height="5" rx="2.5" fill="#D0CCC6"/>
+            <ellipse cx="200" cy="25" rx="18" ry="14" fill="#CC1E1E" opacity=".9"/>
+            <ellipse cx="200" cy="25" rx="11" ry="8" fill="#A01515"/>
+          </svg>
+        </div>
+        <h3>R-X1 Sprint</h3>
+        <p>Compétition · Plat calme</p>
+        <span class="hc-price">780 €</span>
+      </a>
+
+      <a href="catalogue.html" class="highlight-card highlight-card--featured">
+        <span class="hc-badge hc-badge--hot">Bestseller</span>
+        <div class="hc-visual">
+          <svg viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 25 Q14 10 28 10 L38 25 Q28 40 14 40 Z" fill="#CC1E1E" opacity=".9"/>
+            <rect x="36" y="22" width="148" height="5" rx="2.5" fill="#D0CCC6"/>
+            <path d="M216 25 Q206 10 192 10 L182 25 Q192 40 206 40 Z" fill="#CC1E1E" opacity=".9"/>
+          </svg>
+        </div>
+        <h3>R-X2 Pro</h3>
+        <p>Polyvalent · Race & Touring</p>
+        <span class="hc-price">650 €</span>
+      </a>
+
+      <a href="catalogue.html" class="highlight-card">
+        <span class="hc-badge">Slalom</span>
+        <div class="hc-visual">
+          <svg viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="25" rx="16" ry="22" fill="#CC1E1E" opacity=".9"/>
+            <ellipse cx="20" cy="25" rx="9" ry="13" fill="#A01515"/>
+            <rect x="34" y="22" width="152" height="5" rx="2.5" fill="#D0CCC6"/>
+            <ellipse cx="200" cy="25" rx="16" ry="22" fill="#CC1E1E" opacity=".9"/>
+            <ellipse cx="200" cy="25" rx="9" ry="13" fill="#A01515"/>
+          </svg>
+        </div>
+        <h3>R-S1 Gate</h3>
+        <p>Slalom · Eaux vives</p>
+        <span class="hc-price">720 €</span>
+      </a>
+
+    </div>
+    <a href="catalogue.html" class="btn btn-red" style="margin-top:48px">Voir tout le catalogue</a>
+  </section>
+
+  <!-- TECH STRIP -->
+  <div class="tech-strip">
+    <h2>Conçu pour<br>gagner.</h2>
+    <div class="tech-items">
+      <div class="tech-item"><div class="num">8+</div><div class="lbl">Années R&D</div></div>
+      <div class="tech-item"><div class="num">12</div><div class="lbl">Médailles olympiques</div></div>
+      <div class="tech-item"><div class="num">47</div><div class="lbl">Pays distributeurs</div></div>
+      <div class="tech-item"><div class="num">100%</div><div class="lbl">Fabriqué en Europe</div></div>
+    </div>
+  </div>
+
+  <!-- TEMOIGNAGE -->
+  <section class="section section--mid testimonial-section">
+    <div class="section-label">Athlètes Raab</div>
+    <h2 class="section-title">Ils pagaient<br>avec Raab.</h2>
+    <div class="testimonials">
+      <div class="testi-card">
+        <p class="testi-text">« Depuis que j'utilise le R-X1, je sens une différence immédiate sur mes départs et mes chronos ont baissé de presque 2 secondes au 200m. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">ML</div>
+          <div>
+            <strong>Maxime Lefèvre</strong>
+            <span>Champion de France Sprint K1</span>
+          </div>
         </div>
       </div>
-
-      <div class="hero-stats">
-        <div class="stat"><strong>3K</strong><span>Athlètes</span></div>
-        <div class="stat"><strong>-18%</strong><span>Traînée</span></div>
-        <div class="stat"><strong>720g</strong><span>Poids</span></div>
+      <div class="testi-card">
+        <p class="testi-text">« La rigidité du manche est incomparable. Chaque coup de pagaie est transmis directement à l'eau — aucune perte d'énergie. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SC</div>
+          <div>
+            <strong>Sara Cordeiro</strong>
+            <span>Équipe nationale Portugal</span>
+          </div>
+        </div>
       </div>
-
+      <div class="testi-card">
+        <p class="testi-text">« Le R-S1 Gate est la pagaie la plus réactive que j'aie jamais tenue en slalom. La prise d'eau est instantanée, même dans des courants violents. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">TK</div>
+          <div>
+            <strong>Thomas Klein</strong>
+            <span>Slalomeur international</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="section section--mid">
-    <div class="container">
-
-      <h2 class="section-title">La pagaie repensée</h2>
-
-      <div class="feat-grid">
-        <div class="feat-card"><h3>Carbone 3K</h3></div>
-        <div class="feat-card"><h3>Lame CFD</h3></div>
-        <div class="feat-card"><h3>Ovale ajustable</h3></div>
-        <div class="feat-card"><h3>Anti-dérapage</h3></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PRODUITS -->
-  <section class="section section--dark">
-    <div class="container">
-
-      <h2 class="section-title">Nos pagaies</h2>
-
-      <div class="highlight-grid">
-        <div class="highlight-card">R-X1 Sprint</div>
-        <div class="highlight-card">R-X2 Pro</div>
-        <div class="highlight-card">R-S1 Gate</div>
-      </div>
-
-    </div>
-  </section>
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html" class="logo">R<span>AA</span>B</a>
+    <p>© 2025 Raab Paddles SAS — Tous droits réservés</p>
+    <ul class="foot-links">
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="#">CGV</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
 
   <script src="nav.js"></script>
 </body>
