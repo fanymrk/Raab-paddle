@@ -445,3 +445,9 @@ footer p {
   transform: translateY(-6px);
   border-color: var(--red);
 }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 40px;
+}
