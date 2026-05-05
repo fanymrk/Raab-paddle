@@ -451,3 +451,21 @@ footer p {
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 40px;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 14px;
+  color: white;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
